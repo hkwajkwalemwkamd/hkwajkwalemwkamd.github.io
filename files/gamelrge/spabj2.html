@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+
+<title>Sukiko</title>
+
+<script language="javascript" src="_functions.js"></script>
+
+<link href="_style.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+
+<!--
+
+.style1 {	color: #FFFFFF;
+
+	font-weight: bold;
+
+	font-size: large;
+
+}
+.style4 {	font-weight: bold;
+	font-size: 23px;
+	color: #FFF;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+-->
+
+</style>
+</head>
+
+
+
+<body onLoad="disallowNav()">
+
+<div align="center">
+
+  <p><span class="style4">&quot;Mmm. Mmm.&quot;</span></p>
+
+
+
+<table width="1019" border="0">
+
+  <tr>
+
+    <td width="105">&nbsp;</td>
+
+    <td width="870"><p><img src="food1.jpg" name="slide" width=1280 height=720 border=0></a></p>
+      <p>
+          <script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("images/spabj200.jpg","images/spabj201.jpg","images/spabj202.jpg","images/spabj203.jpg","images/spabj204.jpg","images/spabj205.jpg","images/spabj206.jpg","images/spabj207.jpg","images/spabj208.jpg","images/spabj209.jpg","images/spabj210.jpg","images/spabj211.jpg","images/spabj212.jpg","images/spabj213.jpg","images/spabj214.jpg","images/spabj215.jpg","images/spabj216.jpg","images/spabj217.jpg","images/spabj218.jpg","images/spabj219.jpg","images/spabj220.jpg","images/spabj221.jpg","images/spabj222.jpg","images/spabj223.jpg","images/spabj224.jpg","images/spabj225.jpg","images/spabj226.jpg","images/spabj227.jpg","images/spabj228.jpg")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=40
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+          </script>
+      </p>
+      <table width="1328" border="0" align="center" bgcolor="#000000">
+        <tr>
+          <td width="422" height="32" bgcolor="#333333">&nbsp;</td>
+          <td width="422" bgcolor="#333333"><a href="spabj1.html">CHANGE VIEW</a></td>
+          <td width="470" bgcolor="#333333">&nbsp;</td>
+        </tr>
+      </table>      
+      <table width="754" border="0" align="center">
+        <tr>
+          <td><script src="happycheck.js">
+
+</script></td>
+          <td><script src="daringcheck.js">
+
+</script></td>
+          <td><script src="violetcheck.js">
+
+</script></td>
+          <td><script src="aprilcheck.js">
+
+</script></td>
+        </tr>
+      </table>      <p>&nbsp;</p></td>
+    </tr>
+</table>
+
+</div></body>
+
+</html>
+
